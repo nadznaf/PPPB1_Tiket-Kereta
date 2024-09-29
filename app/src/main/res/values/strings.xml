@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PPPB1_Tiket-Kereta</string>
+    <array name="destinations">
+        <item>Pilih Tujuan</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Yogyakarta</item>
+        <item>Surabaya</item>
+        <item>Semarang</item>
+        <item>Malang</item>
+        <item>Solo</item>
+        <item>Banyuwangi</item>
+    </array>
+</resources>

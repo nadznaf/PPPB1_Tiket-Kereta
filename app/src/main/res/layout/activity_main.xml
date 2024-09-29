@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_booking"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Pemesanan Tiket Kereta"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginHorizontal="32dp"
+        android:padding="16dp"
+        android:hint="Nama Pemesan"
+        android:inputType="text"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/icon"
+        android:background="@drawable/radius_corner"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/radius_corner"
+        android:elevation="8dp"
+        android:hint="Jam Keberangkatan"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/baseline_clock"
+        android:drawablePadding="8dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Tanggal Keberangkatan"
+        android:drawableLeft="@drawable/baseline_calendar_month"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/icon"
+        android:textSize="18sp"
+        android:textAlignment="textStart"
+        android:background="@drawable/radius_corner"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <Spinner
+        android:id="@+id/spinnerDestinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/radius_corner"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:spinnerMode="dropdown" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/booking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="pesan tiket"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/radius_corner"
+        android:backgroundTint="@color/button"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_bold" />
+
+</LinearLayout>
